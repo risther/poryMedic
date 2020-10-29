@@ -83,24 +83,7 @@ public class PRegistrarCliente extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Toast.makeText(PRegistrarCliente.this,"se pudo registrar",Toast.LENGTH_SHORT);
-                    /*Map<String, Object> map= new HashMap<>();
-                    map.put("name",name);
-                    map.put("correo",correo);
-                    map.put("contraseña",contraseña);
 
-                    String id = mAuth.getCurrentUser().getUid();
-
-                    mDatabasse.child("User").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                             if (task.isSuccessful()){
-                                 startActivity(new Intent(MainActivity.this,actividad.class));
-                                 finish();
-                             }else {
-                                 Toast.makeText(MainActivity.this,"No se pudo registrar correctamente",Toast.LENGTH_SHORT);
-                             }
-                        }
-                    });*/
                     mAuth.signOut();
                 }else {
                     Toast.makeText(PRegistrarCliente.this,"No se pudo registrar",Toast.LENGTH_SHORT);

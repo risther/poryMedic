@@ -103,7 +103,7 @@ public class PLogin extends AppCompatActivity implements AdapterView.OnItemSelec
 
                     }
                     if (tipo.equals("Administrador")) {
-                       // startActivity(new Intent(PLogin.this,PRegistrarEspecialista.class));
+                      startActivity(new Intent(PLogin.this,PprincipalAdministrador.class));
                         finish();
                     }
                 }else {

@@ -22,6 +22,7 @@ public class PprincipalAdministrador extends AppCompatActivity {
         rEspecialidades=(Button) findViewById(R.id.btnAgregarEspecialidad);
 
         btncerrarSA=(Button) findViewById(R.id.btncerrarSA);
+        mAuth=FirebaseAuth.getInstance();
 
         rEspecialidades.setOnClickListener(new View.OnClickListener() {
             @Override
