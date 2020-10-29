@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">poryMedic</string>
+    <string-array name="tipoUsuario">
+        <item>Usuario</item>
+        <item>Especialista</item>
+        <item>Administrador</item>
+    </string-array>
+</resources>
