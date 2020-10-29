@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PRegistrarEspecialistas"></activity>
+        <activity android:name=".PListaEspecialidades"></activity>
+        <activity android:name=".PRegistrarEspecialistas" />
         <activity android:name=".PRegistrarEspecialidades" />
         <activity android:name=".PprincipalAdministrador" />
         <activity android:name=".Pprincipal" />

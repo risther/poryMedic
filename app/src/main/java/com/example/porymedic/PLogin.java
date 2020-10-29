@@ -29,6 +29,7 @@ public class PLogin extends AppCompatActivity implements AdapterView.OnItemSelec
     private FirebaseAuth mAutn;
     DatabaseReference databaseReference;
     String tipo;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
