@@ -20,7 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.UUID;
 
 public class PRegistrarCliente extends AppCompatActivity {
-
     TextView tvdni,tvnombres,tvapellidos,tvtelefono,tvcorreo,tvContraseña;
     Button btnRegistrarCli;
     String dni,nombres,apellidos,telefono,correo,contraseña;
@@ -68,7 +67,7 @@ public class PRegistrarCliente extends AppCompatActivity {
                     databaseReference.child("EUsuarioCliente").child(objUsuario.getId()).setValue(objUsuario);
 
 
-                    Toast.makeText(PRegistrarCliente .this,"Agregado",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PRegistrarCliente.this,"Agregado",Toast.LENGTH_SHORT).show();
                     registrarUsuario();
 
 
@@ -83,7 +82,7 @@ public class PRegistrarCliente extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    Toast.makeText(PRegistrarCliente .this,"se pudo registrar",Toast.LENGTH_SHORT);
+                    Toast.makeText(PRegistrarCliente.this,"se pudo registrar",Toast.LENGTH_SHORT);
                     /*Map<String, Object> map= new HashMap<>();
                     map.put("name",name);
                     map.put("correo",correo);
@@ -104,7 +103,7 @@ public class PRegistrarCliente extends AppCompatActivity {
                     });*/
                     mAuth.signOut();
                 }else {
-                    Toast.makeText(PRegistrarCliente .this,"No se pudo registrar",Toast.LENGTH_SHORT);
+                    Toast.makeText(PRegistrarCliente.this,"No se pudo registrar",Toast.LENGTH_SHORT);
                 }
             }
         });
