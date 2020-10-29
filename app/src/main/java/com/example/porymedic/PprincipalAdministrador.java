@@ -46,6 +46,8 @@ public class PprincipalAdministrador extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mAuth.signOut();
+                startActivity(new Intent(PprincipalAdministrador.this,PLogin.class));
+                finish();
             }
         });
     }
